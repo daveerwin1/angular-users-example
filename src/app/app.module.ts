@@ -1,3 +1,5 @@
+import { UsersModule } from './users/users.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,6 +9,8 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PublicpageComponent } from './publicpage/publicpage.component';
 import { PrivatepageComponent } from './privatepage/privatepage.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,6 +22,7 @@ import { PrivatepageComponent } from './privatepage/privatepage.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
